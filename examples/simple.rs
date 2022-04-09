@@ -30,6 +30,7 @@ pub async fn main() {
     // Subscribe to four channels.
     sub.subscribe("channel1".to_string()).await.unwrap();
     sub.subscribe("channel2".to_string()).await.unwrap();
+        sub.publish("channel2".to_string(), "Published message".to_string()).await.unwrap();
     tokio::spawn(async move {
         channel3_sub
             .subscribe("channel3".to_string())

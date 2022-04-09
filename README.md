@@ -1,6 +1,6 @@
 # Redis subscription
 
-Easily subscribe and unsubscribe to redis pubsub.
+Easily subscribe, unsubscribe, and publish to redis pubsub.
 
 ## Why this package?
 
@@ -9,7 +9,8 @@ This crate aims to resolve this.
 
 ## What doesn't it do?
 
-Almost everything! It only handles subscriptions, so it cannot set/get keys or even publishing.
+Almost everything! It only handles subscriptions, so it cannot set/get keys.
+This version *does* support publishing.
 Use the [redis](https://crates.io/crates/redis) crate instead, this one works well with all other features.
 
 ## Usage
