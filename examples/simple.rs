@@ -1,6 +1,6 @@
 use std::{sync::Arc, time::Duration};
 
-use redis_subscribe::RedisSub;
+use redis_pubsub::RedisSub;
 use tokio::time::sleep;
 use tokio_stream::StreamExt;
 

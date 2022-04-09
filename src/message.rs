@@ -17,7 +17,6 @@ pub enum Message {
         channel: String,
         message: String,
     },
-
     PatternSubscription {
         channel: String,
         subscriptions: i64,

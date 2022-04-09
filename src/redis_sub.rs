@@ -44,6 +44,14 @@ impl RedisSub {
         }
     }
 
+    /// Publish a message to a channel.
+    ///
+    /// # Errors
+    /// Returns an error if an error happens on the underlying TCP stream.
+    pub async fn publish(&self, channel: String, message: String) -> crate::Result<()> {
+        self.send_cmd(Command::Publish(channel, message)).await
+    }
+
     /// Subscribe to a channel.
     ///
     /// # Errors

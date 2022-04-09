@@ -1,10 +1,10 @@
 [package]
-name = "redis-subscribe"
+name = "redis-pubsub"
 version = "0.2.1"
 edition = "2021"
-description = "Easily subscribe and unsubscribe to redis pubsub."
+description = "Fork of redis-subscribe which also supports publishing"
 license = "MIT"
-repository = "https://github.com/nexiumapp/redis-subscribe"
+repository = "https://github.com/randomairborne/redis-pubsub"
 keywords = ["redis", "pubsub", "subscribe"]
 categories = ["database", "network-programming", "parser-implementations"]
 rust-version = "1.56"
