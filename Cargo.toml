@@ -1,6 +1,6 @@
 [package]
 name = "redis-pubsub"
-version = "0.2.1"
+version = "0.0.1"
 edition = "2021"
 description = "Fork of redis-subscribe which also supports publishing"
 license = "MIT"
